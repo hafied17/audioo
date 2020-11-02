@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		556FF9FF2CE6C1FC600C79C3 /* Pods_audioo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E13AFAE0E759DF0DD7B66A1 /* Pods_audioo.framework */; };
 		807F12B0254ADF9000B9753E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F12AF254ADF9000B9753E /* AppDelegate.swift */; };
 		807F12B2254ADF9000B9753E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F12B1254ADF9000B9753E /* SceneDelegate.swift */; };
 		807F12B4254ADF9000B9753E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F12B3254ADF9000B9753E /* ViewController.swift */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E13AFAE0E759DF0DD7B66A1 /* Pods_audioo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_audioo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3665D1BF340F88F51DDC74A8 /* Pods-audioo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-audioo.release.xcconfig"; path = "Target Support Files/Pods-audioo/Pods-audioo.release.xcconfig"; sourceTree = "<group>"; };
+		537ABD573CB02028077FEDDF /* Pods-audioo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-audioo.debug.xcconfig"; path = "Target Support Files/Pods-audioo/Pods-audioo.debug.xcconfig"; sourceTree = "<group>"; };
 		807F12AC254ADF9000B9753E /* audioo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = audioo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		807F12AF254ADF9000B9753E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		807F12B1254ADF9000B9753E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556FF9FF2CE6C1FC600C79C3 /* Pods_audioo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		797096C2046607472289D71A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E13AFAE0E759DF0DD7B66A1 /* Pods_audioo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		807F12A3254ADF9000B9753E = {
 			isa = PBXGroup;
 			children = (
 				807F12AE254ADF9000B9753E /* audioo */,
 				807F12AD254ADF9000B9753E /* Products */,
+				B40E83A7A8BB0023876B1D47 /* Pods */,
+				797096C2046607472289D71A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +85,16 @@
 			path = audioo;
 			sourceTree = "<group>";
 		};
+		B40E83A7A8BB0023876B1D47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				537ABD573CB02028077FEDDF /* Pods-audioo.debug.xcconfig */,
+				3665D1BF340F88F51DDC74A8 /* Pods-audioo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 807F12C3254ADF9000B9753E /* Build configuration list for PBXNativeTarget "audioo" */;
 			buildPhases = (
+				CF364E018F53CA39E6596152 /* [CP] Check Pods Manifest.lock */,
 				807F12A8254ADF9000B9753E /* Sources */,
 				807F12A9254ADF9000B9753E /* Frameworks */,
 				807F12AA254ADF9000B9753E /* Resources */,
+				9121CD30BE1021A0C4F8081F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9121CD30BE1021A0C4F8081F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-audioo/Pods-audioo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-audioo/Pods-audioo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-audioo/Pods-audioo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF364E018F53CA39E6596152 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-audioo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		807F12A8254ADF9000B9753E /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		807F12C4254ADF9000B9753E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 537ABD573CB02028077FEDDF /* Pods-audioo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +374,7 @@
 		};
 		807F12C5254ADF9000B9753E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3665D1BF340F88F51DDC74A8 /* Pods-audioo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
